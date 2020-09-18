@@ -1,14 +1,14 @@
- #import socket module
+# import socket module
 from socket import *
-import sys # In order to terminate the program
+import sys  # In order to terminate the program
+
 
 def webServer(port=13331):
-   serverSocket = socket(AF_INET, SOCK_STREAM)
+    serverSocket = socket(AF_INET, SOCK_STREAM)
 
     # Prepare a sever socket
     # Fill in start
-    serverPort = 13331
-    serverSocket.bind(('', serverPort))
+    serverSocket.bind(('', 13331))
     serverSocket.listen(1)
     # Fill in end
 
@@ -52,3 +52,4 @@ def webServer(port=13331):
 
 if __name__ == "__main__":
     webServer(13331)
+  
